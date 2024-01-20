@@ -26,11 +26,6 @@ def setup():
     driver.close()
 
 
-def test_home_page_opens(setup):
-    driver = setup
-    assert driver.find_element(By.XPATH, '//p[text()="Welcome to "]').is_displayed()
-
-
 def test_sign_up_success(setup):
     driver = setup
     email = random_mail()

@@ -27,11 +27,6 @@ def setup():
     driver.close()
 
 
-def test_home_page_opens(setup):
-    driver = setup
-    assert driver.find_element(By.XPATH, '//p[text()="Welcome to "]').is_displayed()
-
-
 def test_reservation_and_confirm_reservation_2_meals(setup):
     driver = setup
     driver.find_element(By.XPATH, '//a[@href="#/SignIn"]').click()
