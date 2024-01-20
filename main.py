@@ -10,7 +10,6 @@ from selenium.webdriver.common.keys import Keys
 def random_mail():
     return random_char(7) + "@gmail.com"
 
-
 def random_char(char_num):
     return ''.join(random.choice(string.ascii_letters) for _ in range(char_num))
 

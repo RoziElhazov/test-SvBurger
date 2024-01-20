@@ -2,18 +2,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 import pytest
-import random
-import string
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.wait import WebDriverWait
-
-
-def random_mail():
-    return random_char(7) + "@gmail.com"
-
-
-def random_char(char_num):
-    return ''.join(random.choice(string.ascii_letters) for _ in range(char_num))
+from main import random_mail
 
 
 @pytest.fixture()
